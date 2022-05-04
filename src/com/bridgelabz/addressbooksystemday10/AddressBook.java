@@ -1,8 +1,10 @@
 package com.bridgelabz.addressbooksystemday10;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AddressBook {
     static Scanner sc=new Scanner(System.in);
+    ArrayList<String> ContactsArrayList = new ArrayList<>();
     public void addContacts() {
         Contacts contact = new Contacts();
         System.out.println("enter the firstname");
