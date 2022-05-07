@@ -5,8 +5,11 @@ public class AddressBookMain {
         System.out.println("Welcome to Address Book");
         AddressBook addressbook=new AddressBook();
         addressbook.addContacts();
+        System.out.println("Enter the details");
         addressbook.addContacts();
-        
+
+        addressbook.editContact();
+
     }
 
 }

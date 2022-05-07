@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/AddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/AddressBookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/AddressBookMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/Contacts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +31,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Bridgelabz_coderepo/AddressBookSystemDay10&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AddressBookMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.addressbooksystemday10.AddressBookMain" />

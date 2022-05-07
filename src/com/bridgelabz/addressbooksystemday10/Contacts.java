@@ -1,6 +1,9 @@
 package com.bridgelabz.addressbooksystemday10;
 
+import java.util.Scanner;
 public class Contacts {
+
+    static Scanner scanner = new Scanner(System.in);
     private String firstName;
     private String lastName;
     private String email;
@@ -72,6 +75,33 @@ public class Contacts {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public void editContact(){
+        System.out.println("Enter the firstname to ne  replaced");
+        String firstName = scanner.next();
+        setFirstName(firstName);
+        System.out.println("Enter LastName");
+        String lastName = scanner.next();
+        setLastName(lastName);
+        System.out.println("Enter Email");
+        String email = scanner.next();
+        setEmail(email);
+        System.out.println("Enter Phn No.");
+        String phoneNumber = scanner.next();
+        setPhoneNumber(phoneNumber);
+        System.out.println("Enter Zip");
+        String zip = scanner.next();
+        setZip(zip);
+        System.out.println("Enter City");
+        String city = scanner.next();
+        setCity(city);
+        System.out.println("Enter State");
+        String state = scanner.next();
+        setState(state);
+        System.out.println("Enter Address");
+        String address = scanner.next();
+        setAddress(address);
     }
 
     @Override
