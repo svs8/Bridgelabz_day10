@@ -13,6 +13,11 @@ public class Contacts {
     private String state;
     private String address;
 
+    public Contacts(){}
+
+    public Contacts(String firstName) {
+    }
+
     public String getFirstName() {
         return firstName;
     }

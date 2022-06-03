@@ -38,9 +38,22 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Bridgelabz_coderepo/AddressBookSystemDay10&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AddressBookMain">
     <configuration name="AddressBookMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.addressbooksystemday10.AddressBookMain" />
+      <module name="AddressBookSystemDay10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.addressbooksystemday10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeWageProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.addressbooksystemday10.EmployeeWageProblem" />
       <module name="AddressBookSystemDay10" />
       <extension name="coverage">
         <pattern>
@@ -55,6 +68,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AddressBookMain" />
+        <item itemvalue="Application.EmployeeWageProblem" />
       </list>
     </recent_temporary>
   </component>
@@ -79,5 +93,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bridgelabz/addressbooksystemday10/AddressBook.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

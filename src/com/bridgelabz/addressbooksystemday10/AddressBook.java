@@ -6,9 +6,37 @@ import java.util.List;
 
 
 public class AddressBook {
+
+    private String AddressBookName;
+
+    @Override
+    public String toString() {
+        return "AddressBook{" +
+                "AddressBookName='" + AddressBookName + '\'' +
+                ", ContactsArrayList=" + ContactsArrayList +
+                '}';
+    }
+
+    public AddressBook(String addressBookName) {
+        AddressBookName = addressBookName;
+    }
+
+    public AddressBook() {
+
+    }
+
+    public String getAddressBookName() {
+        return AddressBookName;
+    }
+
+    public void setAddressBookName(String addressBookName) {
+        AddressBookName = addressBookName;
+    }
+
     static Scanner sc = new Scanner(System.in);
 
     List<Contacts> ContactsArrayList = new ArrayList<Contacts>();
+
     public void addContacts() {
         Contacts contact = new Contacts();
         System.out.println("enter the firstname");
@@ -40,6 +68,34 @@ public class AddressBook {
         System.out.println(contact.toString());
     }
 
+    public void addMultipleContact() {
+        int choice = 0;
+        do {
+            System.out.println("Please enter the Choice");
+            System.out.println("1.Add Contact, 2.Edit Contact, 3.Display Contact,   4 exit");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    addContacts();
+                    break;
+                case 2:
+                    editContact();
+                    break;
+                case 3:
+                    displayContact();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Wrong Choice Entered");
+                    addMultipleContact();
+            }
+        } while (choice != 4);
+
+    }
+
+
     public void editContact() {
         System.out.println("Enter the first name of the contact you want to edit: ");
         String firstName = sc.next();
@@ -49,12 +105,37 @@ public class AddressBook {
                 contact.editContact();
                 System.out.println("Contact edited successfully!");
                 flag = true;
-               break;
+                break;
             }
-       }
-        System.out.print(ContactsArrayList);
+        }
         if (flag == false) {
-           System.out.println("The contact with first name : " + firstName + " is not found!");
+            System.out.println("The contact with first name : " + firstName + " is not found!");
         }
-        }
+        System.out.println();
+        System.out.print(ContactsArrayList);
     }
+
+
+    private void displayContact() {
+        System.out.println("Enter the first name of the contact you want to display: ");
+        String firstName = sc.next();
+        ContactsArrayList.stream().forEach(contact -> {
+                    if (firstName.equals(contact.getFirstName())) {
+                        System.out.println(contact);
+                    }
+                }
+        );
+    }
+
+
+
+
+    public void editAddressBookName() {
+
+        System.out.println("Enter the AddressBook Name");
+        String addressBookName = sc.next();
+        setAddressBookName(addressBookName);
+    }
+
+
+}
